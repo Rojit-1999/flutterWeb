@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flutter_application_1/widgets/navigation/navigationbar.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,11 +11,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World\nThis is a simple Flutter app.'),
-        ),
-      ),
+      title: "API Training",
+      home: Navbar(),
     );
   }
 }
